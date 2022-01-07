@@ -2,3 +2,225 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 </style>*/
+
+/*variables css*/
+:root {
+    /*primary colors*/
+    --dark-grayis-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    /*neutral colors*/
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+}
+
+html {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*reset*/
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/*layout*/
+body {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+.page__section {
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+    width: 85%;
+}
+
+.page__section--flex {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 4em;
+}
+
+.page__section--flex-item {
+    width: 85%;
+}
+
+.computer-image,
+.device-image {
+    width: 100%;
+    height: auto;
+}
+
+.page__section__computer{
+    gap: 3em;
+}
+
+.page__section__download{
+    min-height: 50vh;
+}
+
+.page__section__footer {
+    min-height: 15vh;
+}
+
+
+
+/*components*/
+.img-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: -10;
+}
+
+.page__section__header {
+    width: 100%;
+    gap: 1em;
+}
+
+
+.page__section__header p,
+h1 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    margin-top: 5em;
+    width: 6em;
+}
+
+.page__section__title--mb {
+    margin-bottom: 1em;
+}
+
+.page__section__icon--mb-medium {
+    margin-bottom: 2em;
+}
+
+.page__section__icon--gap-small {
+    gap: 2.5em;
+}
+
+.page__section__paragraph--lineheight {
+    line-height: 1.8;
+}
+
+.page__section__title--gray-black {
+    color: hsl(210, 10%, 20%);
+}
+
+.page__section__paragraph--gray,
+.page__section__icon--gray {
+    color:var(--grayish-blue);
+}
+
+.page__section__footer--backogrund-color {
+    width: 100%;
+    background-color: hsla(201, 11%, 95%);
+}
+
+.page__section__header--mt img {
+    margin-top: 1.5em;
+}
+
+.page__section__footer {
+    justify-content: space-between;
+}
+
+
+.page__section__footer div img{
+    margin-top: 5em;
+    width: 3.5em;
+}
+
+.page__section__footer nav ul {
+    padding-left: 0;
+    color: var(--dark-grayis-blue);
+}
+
+.page__section__footer nav ul li {
+    list-style: none;
+    list-style-position: inside;
+    line-height: 3;
+}
+
+
+.page__section__footer .page__section__footer--attribution{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    height: 10vh;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 3;
+    text-transform: uppercase;
+    background-color: hsl(210, 10%, 20%);
+    color: var(--grayish-blue);
+    margin: 0;
+}
+
+.page__section__footer--attribution p{
+    margin: 0;
+}
+
+.page__section__footer--attribution a:link {
+    color:hsl(171, 66%, 44%);
+    text-decoration: none;
+}   
+
+.page__section__footer--attribution a:visited {
+    color:hsl(171, 66%, 44%);
+    text-decoration: none;
+}
+
+
+/*buttons*/
+.btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    width: 100%;
+    height: 2.8em;
+    padding: .1em;
+    border-radius: 2em;
+    background-color: gray;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-1 {
+    background-color: var(--strong-cyan);
+}
+
+.btn-2 {
+    background-color: var( --light-blue);
+}

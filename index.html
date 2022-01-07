@@ -5,11 +5,11 @@
   <!--encoding characters-->
   <meta charset="UTF-8">
 
-  <!--viewport-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
   <!--title-->
   <title>Frontend Mentor | Clipboard landing page</title>
+
+  <!--meta viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
    <!--favicons-->
    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
@@ -35,161 +35,199 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
 
+   <!--icons-->
+   <script src="https://kit.fontawesome.com/6911c92bee.js" crossorigin="anonymous"></script>
+
    <!--css-->
    <link rel="stylesheet" href="styles/normalize.css">
    <link rel="stylesheet" href="styles/styles-dist.css">
+
 </head>
 
 <body>
   
   <article>
-    <!--section 1-->
-    <header class="page__section page__section-1">
-      <div class="page__section__block">
-        <img src="assets/images/logo.svg" alt="logo">
+    <!--header section-->
+    <header class="page__section page__section--flex page__section__header">
+      <img src="assets/images/bg-header-mobile.png" alt="backgrund" class="img-background">
+      <div class="page__section--flex-item page__section__header--mt">
+        <img src="assets/images/logo.svg" alt="logo" class="logo">
       </div>
-      <div class="page__section__block">
-        <h1>A history of everything you copy</h1>
-        <p>
+
+      <div class="page__section--flex-item">
+        <h1 class="page__section__title--mb page__section__title--gray-black">A history of everything you copy</h1>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Clipboard allows you to track and organize everything you 
           copy. Instantly access your clipboard on all your devices.
         </p>
       </div>
-      <div class="page__section__block">
-        <a href="">Download for iOS</a>
-        <a href="">Download for Mac</a> 
+
+      <div class="page__section--flex-item">
+        <a href="#" class="btn btn-1">Download for iOS</a>
+        <a href="#" class="btn btn-2">Download for Mac</a> 
       </div>
     </header>
 
-    <!--section 2-->
-    <section class="page__section page__section-2">
-      <div class="page__section__block">
-        <h2>Keep track of your snippets</h2>
-        <p>
+    <!--computer section-->
+    <section class="page__section page__section--flex page__section__computer">
+      <div class="page__section--flex-item">
+        <h2 class="page__section__title--mb page__section__title--gray-black">Keep track of your snippets</h2>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Clipboard instantly stores any item you copy in the cloud, 
           meaning you can access your snippets immediately on all your 
           devices. Our Mac and iOS apps will help you organize everything.
         </p>
       </div>
-      <div class="page__section__block">
-        <img src="assets/images/image-computer.png" alt="computer image">
+
+      <div class="page__section--flex-item">
+        <img src="assets/images/image-computer.png" alt="computer image" class="computer-image">
       </div>
-      <div class="page__section__block">
-        <h3>Quick Search</h3>
-        <p>
+      <div class="page__section--flex-item">
+        <h3 class="page__section__title--mb page__section__title--gray-black">Quick Search</h3>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Easily search your snippets by content, category, web address, application, and more.
         </p>
       </div>
-      <div class="page__section__block">
-        <h3>iCloud Sync</h3>
-        <p>
+      <div class="page__section--flex-item">
+        <h3 class="page__section__title--mb page__section__title--gray-black">iCloud Sync</h3>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Instantly saves and syncs snippets across all your devices.
         </p>
       </div>
-      <div class="page__section__block">
-        <h3>Complete History</h3>
-        <p>
+      <div class="page__section--flex-item">
+        <h3 class="page__section__title--mb page__section__title--gray-black">Complete History</h3>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Retrieve any snippets from the first moment you started using the app.
         </p>
       </div>
     </section>
 
-    <!--section 3-->
-    <section class="page__section page__section-3">
-      <div class="page__section__block">
-        <h2>Access Clipboard anywhere</h2>
-        <p>
+    <!--device section-->
+    <section class="page__section page__section--flex page__section__device">
+      <div class="page__section--flex-item">
+        <h2 class="page__section__title--mb page__section__title--gray-black">Access Clipboard anywhere</h2>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Whether you’re on the go, or at your computer, you can access all your Clipboard 
           snippets in a few simple clicks.        
         </p>
       </div>
-      <div class="page__section__block">
-        <img src="assets/images/image-devices.png" alt="device image">
+
+      <div class="page__section--flex-item">
+        <img src="assets/images/image-devices.png" alt="device image" class="device-image">
       </div>
     </section>
 
-    <!--section 4-->
-    <section class="page__section page__section-4">
-      <div class="page__section__block">
-        <h2>Supercharge your workflow</h2>
-        <p>
+
+
+    <!--icon section-->
+    <section class="page__section page__section--flex page__section-icon">
+
+      <div class="page__section--flex-item">
+        <h2 class="page__section__title--mb page__section__title--gray-black">Supercharge your workflow</h2>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           We’ve got the tools to boost your productivity.       
         </p>
       </div>
-      <div class="page__section__block">
-        <h3>Create blacklists</h3>
-        <p>
+
+      <div class="page__section--flex-item">
+        <img src="assets/images/icon-blacklist.svg" alt="Blacklist icon" class="page__section__icon--mb-medium page__section__icon--gray">
+        <h3 class="page__section__title--mb page__section__title--gray-black">Create blacklists</h3>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
         </p>
       </div>
-      <div class="page__section__block">
-        <h3>Plain text snippets</h3>
-        <p>
+
+      <div class="page__section--flex-item">
+        <img src="assets/images/icon-text.svg" alt="Plain text icon" class="page__section__icon--mb-medium page__section__icon--gray">
+        <h3 class="page__section__title--mb page__section__title--gray-black">Plain text snippets</h3>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Remove unwanted formatting from copied text for a consistent look.
         </p>
       </div>
-      <div class="page__section__block">
-        <h3>Sneak preview</h3>
-        <p>
+
+      <div class="page__section--flex-item">
+        <img src="assets/images/icon-preview.svg" alt="Preview icon" class="page__section__icon--mb-medium page__section__icon--gray">
+        <h3 class="page__section__title--mb page__section__title--gray-black">Sneak preview</h3>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Quick preview of all snippets on your Clipboard for easy access.
         </p>
       </div>
+
     </section>
 
-    <!--section 5-->
-    <div class="page__section page__section-5">
-      <div class="page__section__block">
-        <img src="assets/images/logo-google.png" alt="Google logo">
+    <!--Branding icon section-->
+    <div class="page__section page__section--flex page__section__branding-icon">
+      <div class="page__section--flex-item">
+        <img src="assets/images/logo-google.png" alt="Google logo" class="page__section__icon--gap-small page__section__icon--gray">
       </div>
-      <div class="page__section__block">
-        <img src="assets/images/logo-ibm.png" alt="IBM logo">
+
+      <div class="page__section--flex-item">
+        <img src="assets/images/logo-ibm.png" alt="IBM logo" class="page__section__icon--gap-small page__section__icon--gray">
       </div>
-      <div class="page__section__block">
-        <img src="assets/images/logo-microsoft.png" alt="Microsoft logo">
+
+      <div class="page__section--flex-item">
+        <img src="assets/images/logo-microsoft.png" alt="Microsoft logo" class="page__section__icon--gap-small page__section__icon--gray">
       </div>
-      <div class="page__section__block">
-        <img src="assets/images/logo-hp.png" alt="hp logo">
+
+      <div class="page__section--flex-item">
+        <img src="assets/images/logo-hp.png" alt="hp logo" class="page__section__icon--gap-small page__section__icon--gray">
       </div>
-      <div class="page__section__block">
-        <img src="assets/images/logo-vector-graphics.png" alt="Vector Graphics logo">
+
+      <div class="page__section--flex-item">
+        <img src="assets/images/logo-vector-graphics.png" alt="Vector Graphics logo" class="page__section__icon--gap-small page__section__icon--gray">
       </div>
     </div>
 
-    <!--section 6-->
-    <section>
-      <div>
-        <h2>Clipboard for iOS and Mac OS</h2>
-        <p>
+    <!--download section-->
+    <section class="page__section page__section--flex page__section__download">
+      <div class="page__section--flex-item">
+        <h2 class="page__section__title--mb page__section__title--gray-black">Clipboard for iOS and Mac OS</h2>
+        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
           and you’re ready to start adding to your clipboard.
         </p>
       </div>
-      <div>
-        <a href="">Download for iOS</a>
-        <a href="">Download for Mac</a>
+
+      <div class="page__section--flex-item">
+        <a href="#" class="btn btn-1">Download for iOS</a>
+        <a href="#" class="btn btn-2">Download for Mac</a>
       </div>
     </section>
   </article>
 
-  <!--footer-->
-  <footer>
-    <div>
+  <!--footer section-->
+  <footer class="page__section page__section--flex page__section__footer page__section__footer--backogrund-color">
+    <div class="page__section--flex-item">
       <img src="assets/images/logo.svg" alt="logo">
     </div>
-    <nav>
+
+    <nav class="page__section--flex-item">
       <ul>
         <li><a>FAQs</a></li>
+        <li><a>Contact Us</a></li>
         <li><a>Privacy Policy</a></li>
         <li><a>Press Kit</a></li>
         <li><a>Install Guide</a></li>
       </ul>
     </nav>
-    <div>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+
+    <div class="page__section--flex-item">
+      <a><i class="fab fa-facebook-square"></i></a>
+      <a><i class="fab fa-twitter"></i></a>
+      <a><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="page__section--flex-item page__section__footer--attribution">
+      <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
+        <div>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        </div> 
+        <div>
+          Coded by <a href="#" target="_blank">Ezequiel Vélez</a>.
+        </div>
       </p>
     </div>
+
   </footer>
 
 </body>
