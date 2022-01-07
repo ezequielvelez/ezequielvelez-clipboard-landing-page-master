@@ -15,11 +15,11 @@
 }
 
 html {
+    margin: 0;
+    padding: 0;
     font-family: "Bai Jamjuree", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -31,14 +31,15 @@ p {
     margin: 0;
 }
 
+/*mobile-first until 480px*/
 /*layout*/
 body {
-    padding: 0;
-    width: 100%;
-    margin: 0;
     position: relative;
-    min-height: 100vh;
     text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -56,6 +57,7 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     gap: 4em;
 }
 
@@ -71,6 +73,10 @@ body {
 
 .page__section__computer{
     gap: 3em;
+
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page__section__download{
@@ -89,8 +95,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-
-    z-index: -10;
 }
 
 .page__section__header {
@@ -166,6 +170,10 @@ h1 {
     line-height: 3;
 }
 
+.page__section__computer p {
+    justify-content: center;
+}
+
 
 .page__section__footer .page__section__footer--attribution{
     display: flex;
@@ -211,7 +219,6 @@ h1 {
     height: 2.8em;
     padding: .1em;
     border-radius: 2em;
-    background-color: gray;
     text-decoration: none;
     color: #fff;
     font-weight: 600;
@@ -223,4 +230,132 @@ h1 {
 
 .btn-2 {
     background-color: var( --light-blue);
+}
+
+.page__section__footer
+.page__section__footer--flex {
+    width: 100%;
+    margin: 0;
+}
+
+/*---media queries 600px 1024px*/
+@media screen and (min-width: 768px) {
+    .page__section__header-btns{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 772.64px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
+
+    .btn {
+        width: 359.59px;
+        height: 3em;
+    }
+    
+    p  {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /*computer section*/
+    .page__section__computer {
+        width: 100%;
+    } 
+
+    .page__section__computer p{
+        width: 85%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page__section__computer--grid {
+        display: grid;
+        grid-template-columns:  repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .page__section__computer--grid-item-left {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .right--left {
+        text-align: left;
+    }
+
+    .right--left p{
+        text-align: left;
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 2em;
+    }
+
+    .page__section__download-btns{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 772.64px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
+
+    .btn {
+        width: 359.59px;
+        height: 3em;
+    }
+
+    .page__section-icon--grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        gap: 2em;
+    }
+
+    .page__section__icon--flex div {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 0;
+
+    }
+
+    .page__section--flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page__section-icon,
+    .page__section__branding-icon {
+        min-height: 50vh;
+    }
+
+
 }

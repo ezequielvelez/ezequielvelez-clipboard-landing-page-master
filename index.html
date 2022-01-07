@@ -49,7 +49,9 @@
   <article>
     <!--header section-->
     <header class="page__section page__section--flex page__section__header">
+
       <img src="assets/images/bg-header-mobile.png" alt="backgrund" class="img-background">
+
       <div class="page__section--flex-item page__section__header--mt">
         <img src="assets/images/logo.svg" alt="logo" class="logo">
       </div>
@@ -62,15 +64,17 @@
         </p>
       </div>
 
-      <div class="page__section--flex-item">
+      <div class="page__section--flex-item page__section__header-btns">
         <a href="#" class="btn btn-1">Download for iOS</a>
         <a href="#" class="btn btn-2">Download for Mac</a> 
       </div>
+
     </header>
 
     <!--computer section-->
-    <section class="page__section page__section--flex page__section__computer">
-      <div class="page__section--flex-item">
+    <section class="page__section page__section--flex page__section__computer ">
+
+      <div class="page__section--flex-item page__section__computer--grid-item-top">
         <h2 class="page__section__title--mb page__section__title--gray-black">Keep track of your snippets</h2>
         <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
           Clipboard instantly stores any item you copy in the cloud, 
@@ -79,26 +83,36 @@
         </p>
       </div>
 
-      <div class="page__section--flex-item">
-        <img src="assets/images/image-computer.png" alt="computer image" class="computer-image">
-      </div>
-      <div class="page__section--flex-item">
-        <h3 class="page__section__title--mb page__section__title--gray-black">Quick Search</h3>
-        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
-          Easily search your snippets by content, category, web address, application, and more.
-        </p>
-      </div>
-      <div class="page__section--flex-item">
-        <h3 class="page__section__title--mb page__section__title--gray-black">iCloud Sync</h3>
-        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
-          Instantly saves and syncs snippets across all your devices.
-        </p>
-      </div>
-      <div class="page__section--flex-item">
-        <h3 class="page__section__title--mb page__section__title--gray-black">Complete History</h3>
-        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
-          Retrieve any snippets from the first moment you started using the app.
-        </p>
+      <div class="page__section--flex-item  page__section--flex page__section__computer--grid">
+
+        <!--left-->
+        <div class="page__section--flex-item page__section__computer--grid-item-left">
+          <img src="assets/images/image-computer.png" alt="computer image" class="computer-image">
+        </div>
+  
+        <!--right-->
+        <div class="page__section--flex-item page__section__computer--grid-item-right">
+          <div class="right--left">
+            <h3 class="page__section__title--mb page__section__title--gray-black">Quick Search</h3>
+            <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
+              Easily search your snippets by content, category, web address, application, and more.
+            </p>
+          </div>
+      
+          <div class="right--left">
+            <h3 class="page__section__title--mb page__section__title--gray-black">iCloud Sync</h3>
+            <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+          </div>
+      
+          <div class="right--left">
+            <h3 class="page__section__title--mb page__section__title--gray-black">Complete History</h3>
+            <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
+              Retrieve any snippets from the first moment you started using the app.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -129,34 +143,35 @@
         </p>
       </div>
 
-      <div class="page__section--flex-item">
-        <img src="assets/images/icon-blacklist.svg" alt="Blacklist icon" class="page__section__icon--mb-medium page__section__icon--gray">
-        <h3 class="page__section__title--mb page__section__title--gray-black">Create blacklists</h3>
-        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
-          Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-        </p>
+      <div class="page__section--flex-item page__section-icon--grid">
+        <div>
+          <img src="assets/images/icon-blacklist.svg" alt="Blacklist icon" class="page__section__icon--mb-medium page__section__icon--gray">
+          <h3 class="page__section__title--mb page__section__title--gray-black">Create blacklists</h3>
+          <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
+            Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+          </p>
+        </div>
+  
+        <div>
+          <img src="assets/images/icon-text.svg" alt="Plain text icon" class="page__section__icon--mb-medium page__section__icon--gray">
+          <h3 class="page__section__title--mb page__section__title--gray-black">Plain text snippets</h3>
+          <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </div>
+  
+        <div>
+          <img src="assets/images/icon-preview.svg" alt="Preview icon" class="page__section__icon--mb-medium page__section__icon--gray">
+          <h3 class="page__section__title--mb page__section__title--gray-black">Sneak preview</h3>
+          <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </div>
       </div>
-
-      <div class="page__section--flex-item">
-        <img src="assets/images/icon-text.svg" alt="Plain text icon" class="page__section__icon--mb-medium page__section__icon--gray">
-        <h3 class="page__section__title--mb page__section__title--gray-black">Plain text snippets</h3>
-        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
-          Remove unwanted formatting from copied text for a consistent look.
-        </p>
-      </div>
-
-      <div class="page__section--flex-item">
-        <img src="assets/images/icon-preview.svg" alt="Preview icon" class="page__section__icon--mb-medium page__section__icon--gray">
-        <h3 class="page__section__title--mb page__section__title--gray-black">Sneak preview</h3>
-        <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
-          Quick preview of all snippets on your Clipboard for easy access.
-        </p>
-      </div>
-
     </section>
 
     <!--Branding icon section-->
-    <div class="page__section page__section--flex page__section__branding-icon">
+    <div class="page__section page__section--flex page__section__branding-icon page__section--flex-container">
       <div class="page__section--flex-item">
         <img src="assets/images/logo-google.png" alt="Google logo" class="page__section__icon--gap-small page__section__icon--gray">
       </div>
@@ -188,7 +203,7 @@
         </p>
       </div>
 
-      <div class="page__section--flex-item">
+      <div class="page__section--flex-item page__section__download-btns">
         <a href="#" class="btn btn-1">Download for iOS</a>
         <a href="#" class="btn btn-2">Download for Mac</a>
       </div>
@@ -217,6 +232,7 @@
       <a><i class="fab fa-instagram"></i></a>
     </div>
 
+  <div class="page__section__footer--flex">
     <div class="page__section--flex-item page__section__footer--attribution">
       <p class="page__section__paragraph--lineheight page__section__paragraph--gray">
         <div>
@@ -227,7 +243,7 @@
         </div>
       </p>
     </div>
-
+  </div>
   </footer>
 
 </body>
